@@ -5,7 +5,7 @@ document.getElementById('route-form').addEventListener('submit', async (event) =
         id: document.getElementById('id').value,
         origin: document.getElementById('origin').value,
         destination: document.getElementById('destination').value,
-        type: document.getElementById('type').value,
+        trip_type: document.getElementById('type').value,
     };
 
     try {
