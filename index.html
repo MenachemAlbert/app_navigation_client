@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortened Route Viewer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+    <div id="route-form">
+        <form>
+            <h1>Shortened Route Viewer</h1>
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id" required />
+
+            <label for="origin">Origin</label>
+            <input type="text" id="origin" name="origin" required />
+
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" name="destination" required />
+
+            <label for="type">Type</label>
+            <select id="type" name="type">
+                <option value="job">Job</option>
+                <option value="trip">Trip</option>
+            </select>
+
+            <button type="submit">Get Route</button>
+        </form>
+        <div id="display_time">
+            <p><strong>Travel Time: </strong><span id="travel_time"></span></p>
+            <button id="start_trip_button">Start Trip</button>
+        </div>
+    </div>
+
+    <div id="html-content"></div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
